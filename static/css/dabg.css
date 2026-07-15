@@ -1,0 +1,92 @@
+/* Umumiy fon va harflar dizayni */
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%) !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    min-height: 100vh;
+}
+
+/* Karta (Card) dizayni - Skromniy va zamonaviy */
+.card {
+    border: none !important;
+    border-radius: 16px !important;
+    background: rgba(255, 255, 255, 0.85) !important;
+    backdrop-filter: blur(10px); /* Orqa fonni xira qilish (Glassmorphism efekti) */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.06) !important;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* Postlar ro'yxatidagi kartalar ustiga sichqoncha borgandagi effekt (Hover) */
+.card.h-100:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px 0 rgba(31, 38, 135, 0.12) !important;
+    background: #ffffff !important;
+}
+
+/* Karta sarlavhasi (Card Header) */
+.card-header {
+    background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%) !important; /* Elegant ko'k-binafsha rang */
+    border-top-left-radius: 16px !important;
+    border-top-right-radius: 16px !important;
+    border-bottom: none !important;
+    padding: 1.2rem !important;
+}
+
+/* Django formalaridagi input maydonlarini chiroyli qilish */
+form input, form textarea, form select {
+    width: 100%;
+    padding: 12px 16px;
+    margin-bottom: 15px;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 10px;
+    background-color: #f8fafc;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #4f46e5;
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.1);
+}
+
+/* Tugmalar (Buttons) dizayni va silliq effektlari */
+.btn {
+    border-radius: 10px !important;
+    padding: 10px 20px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.5px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+}
+
+/* Asosiy tugma (Saqlash va Qo'shish) */
+.btn-primary, .btn-success {
+    background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%) !important;
+    border: none !important;
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.2);
+}
+
+.btn-primary:hover, .btn-success:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(79, 70, 229, 0.35);
+    opacity: 0.95;
+}
+
+/* Orqaga qaytish tugmasi (Secondary) */
+.btn-secondary {
+    background: #f1f5f9 !important;
+    color: #475569 !important;
+    border: none !important;
+}
+
+.btn-secondary:hover {
+    background: #e2e8f0 !important;
+    color: #1e293b !important;
+}
+
+/* Post footer qismi */
+.card-footer {
+    background: transparent !important;
+    border-top: 1px solid #f1f5f9 !important;
+    padding: 1rem !important;
+}
